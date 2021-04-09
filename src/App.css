@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,50 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+:root {
+  --primary-white: #fff;
+  --primary-blue: #7D8DF4;
+  --primary-dark: rgba(255, 255, 255, 0)
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/***********************NAVBAR*******************************/
+
+.logo {
+  width: 13rem;
+}
+
+nav a.nav-link {
+  font-weight: 700;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  color: var(--primary-white) !important;
+  border-top: 0.1875rem solid var(--primary-dark);
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 6rem !important;
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a:active:focus {
+  border-top: 0.1875rem solid var(--primary-blue);
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--primary-blue);
 }
