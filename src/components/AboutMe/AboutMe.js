@@ -11,7 +11,7 @@ function AboutMe() {
           </div>
         </div>
         <div className="col-lg-6 col-xm-12">
-          <h1 className="aboutme-heading">About Me</h1>
+          <h1 className="aboutme-heading">ABOUT ME</h1>
           <h3>I am a Full Stack Developer from Salt Lake City, Utah.</h3>
           <p>
             Hello! I am Josh. I have spent most of my life in the manufactoring 
