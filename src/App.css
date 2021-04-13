@@ -1,16 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 :root {
   --primary-white: #fff;
   --primary-light-grey: #f4f4f4;
-  --primary-blue: #7D8DF4;
+  --primary-gray: #8f959c;
+  --primary-dark-gray: #5c5c5c;
+  --primary-blue: #7d8df4;
   --primary-dark: rgb(52, 58, 64);
-  --primary-purple:  #B069FF;
-  --primary-hover-purple: #9739FF;
+  --primary-purple: #b069ff;
+  --primary-hover-purple: #9739ff;
+  --primary-black: #000000;
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 /***********************NAVBAR*******************************/
@@ -45,13 +48,14 @@ nav ul li {
   height: 6rem !important;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .navbar-brand {
     height: 3rem !important;
   }
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a:active:focus {
+.navbar-nav > li > a.active,
+.navbar-nav > li > a:active:focus {
   border-top: 0.1875rem solid var(--primary-blue);
 }
 
@@ -64,7 +68,7 @@ nav ul li {
 .header-wrapper {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('./components/images/header-image.jpeg') no-repeat;
+    url("./images/header-image.jpeg") no-repeat;
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -85,7 +89,7 @@ nav ul li {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   z-index: 1;
 }
 
@@ -94,7 +98,7 @@ nav ul li {
   text-transform: uppercase;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .main-info h1 {
     font-size: 1.7rem !important;
   }
@@ -107,7 +111,7 @@ nav ul li {
 
 .typed-text {
   font-size: 2rem;
-  color: var(--primary-white)
+  color: var(--primary-white);
 }
 
 .btn-main-offer {
@@ -123,7 +127,7 @@ nav ul li {
   text-decoration: none;
   background-color: var(--primary-hover-purple);
   color: var(--primary-white);
-  transition: .4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .tsparticles-canvas-el {
@@ -133,8 +137,7 @@ nav ul li {
   z-index: 1;
 }
 
-
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .particles {
     display: none;
   }
@@ -151,15 +154,15 @@ nav ul li {
 .profile-img {
   width: 16rem;
   border-radius: 50%;
-  padding: .3rem;
-  border: 2px solid var(--primary-purple)
+  padding: 0.3rem;
+  border: 2px solid var(--primary-purple);
 }
 
 .aboutme-heading {
-  color: var(--primary-purple)
+  color: var(--primary-purple);
 }
 
-@media(max-width: 568px) {
+@media (max-width: 568px) {
   .profile-img {
     width: 10rem;
   }
@@ -174,7 +177,7 @@ nav ul li {
 }
 
 .services h1 {
-  color: var(--primary-dark)
+  color: var(--primary-dark);
 }
 
 .services .row {
@@ -205,7 +208,8 @@ nav ul li {
   border-bottom: 5px solid var(--primary-blue);
   padding: 0.625rem;
   margin-bottom: 1.875rem;
-  background: var(--primary-white)
+  background: var(--primary-white);
+  transition: 0.3s ease-in-out;
 }
 
 .services .box:hover {
@@ -214,13 +218,200 @@ nav ul li {
 }
 
 .services .box:hover .icon {
-  color: var(--primary-dark)
+  color: var(--primary-dark);
 }
 
 .services .box:hover .circle {
-  background: var(--primary-white)
+  background: var(--primary-white);
 }
 
 .services .box:hover p {
-  color: var(--primary-white)
+  color: var(--primary-white);
+}
+
+/*************************Experience*************************/
+
+.experience {
+  padding: 0.7rem;
+}
+
+.experience-wrapper {
+  position: relative;
+  padding: 3.125rem;
+  overflow: hidden;
+}
+
+.experience h1 {
+  color: var(--primary-blue);
+}
+
+.experience-wrapper::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  margin-left: -0.0625rem;
+  width: 0.125rem;
+  height: 100%;
+  background: var(--primary-gray);
+  z-index: 1;
+}
+
+.timeline-block {
+  width: calc(50% + 0.5rem);
+  display: flex;
+  justify-content: space-between;
+  clear: both;
+}
+
+.timeline-block-right {
+  float: right;
+}
+
+.timeline-block-left {
+  float: left;
+  direction: rtl;
+}
+
+.marker {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 0.3125rem solid var(--primary-dark);
+  background: var(--primary-blue);
+  margin-top: 0.625rem;
+  z-index: 3;
+}
+
+.timeline-content {
+  width: 95%;
+  padding: 0 0.975rem;
+  color: var(--primary-gray);
+  direction: ltr;
+}
+
+.timeline-content h3 {
+  margin-top: 0.3125rem;
+  color: var(--primary-blue);
+  font-weight: 700;
+}
+
+/************************Media******************************/
+
+@media (max-width: 768px) {
+  .experience .container {
+    padding-left: 0;
+  }
+  .experience-wrapper::before {
+    left: 0.5rem;
+    margin-bottom: 1.875rem;
+  }
+  .timeline-block-right {
+    float: none;
+    width: 100%;
+  }
+  .timeline-block-left {
+    float: none;
+    width: 100%;
+    direction: ltr;
+  }
+}
+
+/*********************Portfolio***********************/
+
+.portfolio-wrapper {
+  background: var(--primary-light-grey);
+  padding: 3rem 0;
+}
+
+.portfolio-wrapper h1 {
+  color: var(--primary-blue);
+}
+
+.portfolio-image {
+  width: 15rem;
+  border: 1px solid var(--primary-blue);
+  padding: 0 0.5rem;
+}
+
+.portfolio-image-box {
+  position: relative;
+  margin: 1rem;
+}
+
+/***********************Overflow Box*************************/
+
+.overflow {
+  position: absolute;
+  opacity: 0;
+  background: var(--primary-black);
+  width: 15rem;
+  height: 8rem;
+  top: 0;
+  border: 1px solid var(--primary-purple);
+  cursor: pointer;
+}
+
+.portfolio-image-box:hover .overflow {
+  opacity: 60%;
+  transition: 0.3s ease-in-out;
+}
+.portfolio-icon {
+  position: absolute;
+  opacity: 0;
+  margin-left: -8.4rem;
+  margin-top: 2.8rem;
+  color: var(--primary-blue);
+  font-size: 2.5rem;
+}
+
+.portfolio-image-box:hover .portfolio-icon {
+  opacity: 70%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/************************overflow popup box*******************************/
+
+.portfolio-image-popupbox {
+  width: 45rem;
+  padding: 0 0.5rem;
+}
+
+.hyper-link {
+  cursor: pointer;
+  color: var(--primary-blue);
+}
+
+.hyper-link:hover {
+  cursor: pointer;
+  color: var(--primary-purple);
+}
+
+/**************************media***********************************/
+
+@media (max-width: 768px) {
+  .portfolio-image-popupbox {
+    width: 100%;
+  }
+}
+
+@media (max-height: 570px) {
+  .portfolio-wrapper {
+    height: 100%;
+  }
+
+  .portfolio-image-popupbox {
+    width: 50%;
+  }
+}
+
+@media (max-height: 280px) {
+  .portfolio-wrapper {
+    height: 90%;
+  }
+
+  .portfolio-image-popupbox {
+    width: 30%;
+  }
 }
