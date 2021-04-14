@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 import { 
   FacebookShareButton, 
   FacebookIcon, 
@@ -19,8 +20,19 @@ const Footer = () => {
             <div className="d-flex">
               <p>JoshuaAdamWilson1@gmail.com</p>
             </div>
+            <div className="d-flex justify-content-center">
+              <a href="https://www.facebook.com/WhisperinScream">
+                <FacebookIcon className="mx-3" size={36} />
+              </a>
+              <a href="https://twitter.com/JawJagged">
+                <TwitterIcon className="mx-3" size={36} />
+              </a>
+              <a href="https://www.linkedin.com/in/joshua-adam-wilson/">
+                <LinkedinIcon className="mx-3" size={36} />
+              </a>
+            </div>
           </div>
-          <div className="col-lg-3 col-md-2 col-sm-6">
+          <div className="middle col-lg-3 col-md-2 col-sm-6">
             <div className="row">
               <div className="col">
                 <a className="footer-nav">Home</a>
@@ -39,23 +51,25 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
+            <div className="shareto">Share To:</div>
             <div className="d-flex justify-content-center">
+              
               <FacebookShareButton
-                url={"https://www.facebook.com/WhisperinScream"}
+                url={""}
                 quote={"Full Stack Developer"}
                 hashtag='#react'
               >
                 <FacebookIcon className="mx-3" size={36} />
               </FacebookShareButton>
               <TwitterShareButton
-                url={"https://twitter.com/JawJagged"}
+                url={""}
                 quote={"Full Stack Developer"}
                 hashtag='#react'
               >
                 <TwitterIcon className="mx-3" size={36} />
               </TwitterShareButton>
               <LinkedinShareButton
-                url={"https://www.linkedin.com/in/joshua-adam-wilson/"}
+                url={""}
                 quote={"Full Stack Developer"}
                 hashtag='#react'
               >

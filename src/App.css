@@ -604,12 +604,22 @@ textarea.form-control {
 .footer {
   background: var(--primary-black);
   color: var(--primary-dark-gray);
-  padding: 3rem;
+  padding: 2rem;
+}
+
+.middle {
+  padding: 25px 0 0 30px !important;
+}
+
+.shareto {
+  text-align: center;
+  padding-bottom: 17px;
 }
 
 .footer a {
   text-decoration: none;
   color: var(--primary-dark-gray);
+  padding-top: 17px;
 }
 
 .footer a:hover {
@@ -619,5 +629,6 @@ textarea.form-control {
 }
 
 .footer p {
+  height: 10px;
   padding-bottom: 0;
 }

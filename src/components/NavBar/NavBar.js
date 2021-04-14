@@ -9,7 +9,7 @@ const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
       <div className="container">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand">
           <img className="logo" src={logo} alt="logo" />
         </a>
         <button
@@ -27,32 +27,32 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
-              <Link smooth={true} to="home" offset={-100} className="nav-link" href="#">
-                Home <span className="sr-only">(current)</span>
+              <Link smooth={true} to="home" offset={-100} className="nav-link">
+                Home 
               </Link>
             </li>
             <li className="nav-item">
-              <Link smooth={true} to="aboutme" offset={-110} className="nav-link" href="#">
+              <Link smooth={true} to="aboutme" offset={-110} className="nav-link">
                 About Me
               </Link>
             </li>
             <li className="nav-item">
-              <Link smooth={true} to="services" offset={-110} className="nav-link" href="#">
+              <Link smooth={true} to="services" offset={-110} className="nav-link">
                 Services
               </Link>
             </li>
             <li className="nav-item">
-              <Link smooth={true} to="experience" offset={-110} className="nav-link" href="#">
+              <Link smooth={true} to="experience" offset={-110} className="nav-link">
                 Experience
               </Link>
             </li>
             <li className="nav-item">
-              <Link smooth={true} to="portfolio" offset={-110} className="nav-link" href="#">
+              <Link smooth={true} to="portfolio" offset={-110} className="nav-link">
                 Portfolio
               </Link>
             </li>
             <li className="nav-item">
-              <Link smooth={true} to="contactme" offset={-110} className="nav-link" href="#">
+              <Link smooth={true} to="contactme" offset={-110} className="nav-link">
                 Contact Me
               </Link>
             </li>
