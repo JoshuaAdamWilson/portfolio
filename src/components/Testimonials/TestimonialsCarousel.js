@@ -14,7 +14,7 @@ const TestimonialsCarousel = () => {
       interval={3000}
     >
       <>
-        <img src={tempicon} alt="Your Image Here" />
+        <img src={tempicon} alt="You Here" />
         <div className="myCarousel">
           <h3>
             Your Name Here <br />
@@ -24,7 +24,7 @@ const TestimonialsCarousel = () => {
         </div>
       </>
       <>
-        <img src={tempicon} alt="Your Image Here" />
+        <img src={tempicon} alt="You Here" />
         <div className="myCarousel">
           <h3>
             Your Name Here <br />
