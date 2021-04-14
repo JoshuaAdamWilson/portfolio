@@ -10,7 +10,7 @@ const Contacts = () => {
   const templateID = "template_ID_portfolio";
   const userID = "user_D1YBS1PX5SdJnVuawiiWP";
 
-  const onSumbit = (data, r) => {
+  const onSubmit = (data, r) => {
     sendEmail(
       serviceID,
       templateID,
@@ -38,7 +38,7 @@ const Contacts = () => {
   };
 
   return (
-    <div className="contacts">
+    <div id="contactme" className="contacts">
       <div className="text-center">
         <h1>CONTACT ME</h1>
         <p>
@@ -48,7 +48,7 @@ const Contacts = () => {
         <span className="success-message">{successMessage}</span>
       </div>
       <div className="container">
-        <form onSubmit={handleSubmit(onSumbit)}>
+        <form onSubmit={handleSubmit(onSubmit)}>
           <div className="row">
             <div className="col-md-6 col-xs-12">
               {/* NAME INPUT */}
@@ -148,7 +148,7 @@ const Contacts = () => {
               <span className="error-message">
                 {errors.description && errors.description.message}
               </span>
-              <button className="btn-main-offer contact-btn">Contact Me</button>
+              <button className="btn-main-offer contact-btn">Send</button>
             </div>
           </div>
         </form>

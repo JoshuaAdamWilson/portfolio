@@ -57,7 +57,7 @@ nav ul li {
 }
 
 .navbar-nav > li > a.active,
-.navbar-nav > li > a:active:focus {
+.navbar-nav > li > a:focus {
   border-top: 0.1875rem solid var(--primary-blue);
 }
 
@@ -73,7 +73,8 @@ nav ul li {
     url("./images/header-image.jpeg") no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 80vh;
+  margin-top: 80px;
 }
 
 .header-wrapper > img {
@@ -176,6 +177,7 @@ nav ul li {
   text-align: center;
   padding-bottom: 2rem;
   background: var(--primary-light-grey);
+  padding-bottom: 0;
 }
 
 .services h1 {
@@ -324,6 +326,7 @@ nav ul li {
 .portfolio-wrapper {
   background: var(--primary-light-grey);
   padding: 3rem 0;
+  padding-top: 0;
 }
 
 .portfolio-wrapper h1 {
@@ -371,6 +374,10 @@ nav ul li {
   opacity: 70%;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+}
+
+.popupbox-wrapper {
+  margin-top: 7rem;
 }
 
 /************************overflow popup box*******************************/
@@ -489,7 +496,7 @@ nav ul li {
 
 .contacts {
   background: var(--primary-dark);
-  padding: 3rem 0;
+  padding: 1rem 0;
 }
 
 .contacts h1 {
@@ -590,4 +597,27 @@ textarea.form-control {
   .contacts p {
     padding: 0 0.4rem;
   }
+}
+
+/******************************Footer**********************/
+
+.footer {
+  background: var(--primary-black);
+  color: var(--primary-dark-gray);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-dark-gray);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-blue);
+  cursor: pointer;
+}
+
+.footer p {
+  padding-bottom: 0;
 }
