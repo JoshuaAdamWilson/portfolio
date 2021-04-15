@@ -14,7 +14,7 @@ const Footer = () => {
         <div id="updown" className="row">
           <div id="leftside" className="col-lg-4 col-md-6 col-sm-6">
             <div className="d-flex align-content-center">
-              <p>6777 Tupelo Ln West Jordan, Utah 84081</p>
+              <p>West Jordan, Utah</p>
             </div>
             <div className="d-flex">
               <p>JoshuaAdamWilson1@gmail.com</p>
