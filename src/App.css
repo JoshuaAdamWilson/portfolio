@@ -102,6 +102,9 @@ nav ul li {
 }
 
 @media (max-width: 768px) {
+  .header-wrapper {
+    margin-top: 60px;
+  }
   .main-info h1 {
     font-size: 1.7rem !important;
   }
@@ -656,14 +659,8 @@ textarea.form-control {
 }
 
 @media(max-width: 991px) {
-  #copyright {
-    margin-left: -50px;
-  }
   #leftside p {
     text-align: center;
     margin-left: -22px;
-  }
-  .middle {
-    margin-left: -23px;
   }
 }
