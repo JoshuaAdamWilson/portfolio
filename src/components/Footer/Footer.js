@@ -11,9 +11,9 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="container">
-        <div className="row">
-          <div className="col-lg-4 col-md-6 col-sm-6">
-            <div className="d-flex">
+        <div id="updown" className="row">
+          <div id="leftside" className="col-lg-4 col-md-6 col-sm-6">
+            <div className="d-flex align-content-center">
               <p>6777 Tupelo Ln West Jordan, Utah 84081</p>
             </div>
             <div className="d-flex">
@@ -84,7 +84,7 @@ const Footer = () => {
                 <LinkedinIcon className="mx-3" size={36} />
               </LinkedinShareButton>
             </div>
-            <p className="pt-3 text-center">
+            <p id="copyright" className="pt-3 text-center">
               Copyright&copy;
               {new Date().getFullYear()}&nbsp;JAW Design | All Rights Reserved
             </p>

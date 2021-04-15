@@ -614,6 +614,8 @@ textarea.form-control {
 .shareto {
   text-align: center;
   padding-bottom: 17px;
+  font-size: 20px;
+  color: var(--primary-white);
 }
 
 .footer a {
@@ -635,6 +637,33 @@ textarea.form-control {
 }
 
 .footer p {
+  min-width: 370px;
   height: 10px;
   padding-bottom: 0;
+}
+
+@media(max-width: 1080px) {
+  #updown {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: none;
+    align-items: center;
+    justify-content: center;
+  }
+  .shareto {
+    margin-top: 10px;
+  }
+}
+
+@media(max-width: 991px) {
+  #copyright {
+    margin-left: -50px;
+  }
+  #leftside p {
+    text-align: center;
+    margin-left: -22px;
+  }
+  .middle {
+    margin-left: -23px;
+  }
 }
