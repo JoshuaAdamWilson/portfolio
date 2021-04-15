@@ -20,24 +20,23 @@ const Portfolio = () => {
           Instagram is an American photo and video-sharing social networking
           service owned by Facebook, Inc.
         </p>
-        <b>Demo: </b>
         <a
           href="https://instagram-clone-edc17.web.app/"
           target="_blank" 
           rel="noopener noreferrer"
           className="hyper-link"
         >
-          https://instagram-clone-edc17.web.app/
+          <b>Demo</b>
         </a>
         <br />
-        <b>Github: </b>
+        
         <a 
           href="https://github.com/JoshuaAdamWilson/InstagramClone"
           target="_blank" 
           rel="noopener noreferrer"
           className="hyper-link"
         >
-          https://github.com/JoshuaAdamWilson/InstagramClone
+          <b>Github</b>
         </a>
       </>
     );
