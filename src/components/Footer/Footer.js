@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-scroll'
 import { 
   FacebookShareButton, 
   FacebookIcon, 
@@ -21,13 +20,22 @@ const Footer = () => {
               <p>JoshuaAdamWilson1@gmail.com</p>
             </div>
             <div className="d-flex justify-content-center">
-              <a href="https://www.facebook.com/WhisperinScream">
+              <a href="https://www.facebook.com/WhisperinScream"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FacebookIcon className="mx-3" size={36} />
               </a>
-              <a href="https://twitter.com/JawJagged">
+              <a href="https://twitter.com/JawJagged"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <TwitterIcon className="mx-3" size={36} />
               </a>
-              <a href="https://www.linkedin.com/in/joshua-adam-wilson/">
+              <a href="https://www.linkedin.com/in/joshua-adam-wilson/"
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
                 <LinkedinIcon className="mx-3" size={36} />
               </a>
             </div>
@@ -35,18 +43,18 @@ const Footer = () => {
           <div className="middle col-lg-3 col-md-2 col-sm-6">
             <div className="row">
               <div className="col">
-                <a className="footer-nav">Home</a>
+                <button className="footer-nav">Home</button>
                 <br />
-                <a className="footer-nav">About Me</a>
+                <button className="footer-nav">About Me</button>
                 <br />
-                <a className="footer-nav">Services</a>
+                <button className="footer-nav">Services</button>
               </div>
               <div className="col">
-                <a className="footer-nav">Experience</a>
+                <button className="footer-nav">Experience</button>
                 <br />
-                <a className="footer-nav">Portfolio</a>
+                <button className="footer-nav">Portfolio</button>
                 <br />
-                <a className="footer-nav">Contact</a>
+                <button className="footer-nav">Contact</button>
               </div>
             </div>
           </div>

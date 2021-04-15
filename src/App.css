@@ -608,7 +608,7 @@ textarea.form-control {
 }
 
 .middle {
-  padding: 25px 0 0 30px !important;
+  padding: 18px 0 0 30px !important;
 }
 
 .shareto {
@@ -622,7 +622,13 @@ textarea.form-control {
   padding-top: 17px;
 }
 
-.footer a:hover {
+.footer button {
+  border: none;
+  background: transparent;
+  color: var(--primary-dark-gray)
+}
+
+.footer button:hover {
   text-decoration: none;
   color: var(--primary-blue);
   cursor: pointer;

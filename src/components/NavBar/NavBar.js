@@ -9,9 +9,9 @@ const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
       <div className="container">
-        <a className="navbar-brand">
+        <div className="navbar-brand">
           <img className="logo" src={logo} alt="logo" />
-        </a>
+        </div>
         <button
           className="navbar-toggler"
           type="button"

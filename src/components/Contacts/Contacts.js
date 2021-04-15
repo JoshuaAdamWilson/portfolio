@@ -97,7 +97,6 @@ const Contacts = () => {
                   className="form-control"
                   placeholder="Email"
                   name="email"
-                  name="phone"
                   {...register("email", {
                       required: "Please provide your email",
                       pattern: {

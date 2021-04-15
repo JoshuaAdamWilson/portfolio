@@ -22,18 +22,20 @@ const Portfolio = () => {
         </p>
         <b>Demo: </b>
         <a
+          href="https://instagram-clone-edc17.web.app/"
+          target="_blank" 
+          rel="noopener noreferrer"
           className="hyper-link"
-          onClick={() => window.open("https://instagram-clone-edc17.web.app/")}
         >
           https://instagram-clone-edc17.web.app/
         </a>
         <br />
         <b>Github: </b>
-        <a
+        <a 
+          href="https://github.com/JoshuaAdamWilson/InstagramClone"
+          target="_blank" 
+          rel="noopener noreferrer"
           className="hyper-link"
-          onClick={() =>
-            window.open("https://github.com/JoshuaAdamWilson/InstagramClone")
-          }
         >
           https://github.com/JoshuaAdamWilson/InstagramClone
         </a>
