@@ -138,7 +138,7 @@ nav ul li {
 
 .tsparticles-canvas-el {
   position: absolute;
-  height: 100vh;
+  height: 80% !important;
   width: 100vh;
   z-index: 1;
 }
@@ -386,10 +386,17 @@ nav ul li {
 
 /************************overflow popup box*******************************/
 
+.popupbox-content {
+  padding-bottom: 10px !important;
+}
 
+.popupbox-content p {
+  margin-bottom: 5px !important;
+}
 
 .portfolio-image-popupbox {
   width: 100%;
+  max-width: 800px;
   padding: 0 0.5rem;
 }
 

@@ -20,6 +20,7 @@ const Portfolio = () => {
           Instagram is an American photo and video-sharing social networking
           service owned by Facebook, Inc.
         </p>
+        <p><b>ReactJS for Front End, Firebase for Back End</b></p>
         <a
           href="https://instagram-clone-edc17.web.app/"
           target="_blank" 
