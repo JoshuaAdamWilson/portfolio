@@ -9,6 +9,8 @@ import { PopupboxManager, PopupboxContainer } from "react-popupbox";
 import "react-popupbox/dist/react-popupbox.css";
 
 const Portfolio = () => {
+
+  // Instagram
   const openPopupboxInstagram = () => {
     const content = (
       <>
@@ -43,17 +45,23 @@ const Portfolio = () => {
       </>
     );
     PopupboxManager.open({ content });
+      PopupboxManager.update({
+        content,
+        config: {
+          titleBar: {
+            enable: true,
+            text: "Instagram Clone Project",
+          }
+        }
+      })
   };
 
   const popupboxConfigInstagram = {
-    titleBar: {
-      enable: true,
-      text: "Instagram Clone Project",
-    },
     fadeIn: true,
     fadeInSpeed: 500,
   };
 
+  // Facebook
   const openPopupboxFacebook = () => {
     const content = (
       <>
@@ -87,23 +95,28 @@ const Portfolio = () => {
       </>
     );
     PopupboxManager.open({ content });
+      PopupboxManager.update({
+        content,
+        config: {
+          titleBar: {
+            enable: true,
+            text: "Facebook Clone Project",
+          }
+        }
+      })
   };
 
   const popupboxConfigFacebook = {
-    titleBar: {
-      enable: true,
-      text: "Facebook Clone Project",
-    },
     fadeIn: true,
     fadeInSpeed: 500,
   };
-
+////////////////////////////////////////////////////
   return (
     <div id="portfolio" className="portfolio-wrapper">
       <div className="container">
         <h1 className="text-uppercase text-center py-5">PORTFOLIO</h1>
         <div className="image-box-wrapper row justify-content-center">
-          {/* dfsgdfg */}
+          {/* Instagram */}
           <div className="portfolio-image-box" onClick={openPopupboxInstagram}>
             <img
               className="portfolio-image"
@@ -114,7 +127,7 @@ const Portfolio = () => {
             <i class="fab fa-instagram"></i>
             <FontAwesomeIcon className="portfolio-icon" icon={faInstagram} />
           </div>
-          {/*asdfasdf*/}
+          {/* Facebook */}
           <div className="portfolio-image-box" onClick={openPopupboxFacebook}>
             <img
               className="portfolio-image"
@@ -125,7 +138,7 @@ const Portfolio = () => {
             <i class="fab fa-facebook"></i>
             <FontAwesomeIcon className="portfolio-icon" icon={faFacebook} />
           </div>
-          {/* kjsdgfjaksdh */}
+          {/* End */}
         </div>
       </div>
       <PopupboxContainer {...popupboxConfigInstagram} />
