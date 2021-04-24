@@ -336,10 +336,16 @@ nav ul li {
   color: var(--primary-blue);
 }
 
+.popup-paragraph {
+  margin: auto;
+  width: 40rem !important;
+}
+
 .portfolio-image {
   width: 15rem;
   border: 1px solid var(--primary-blue);
   padding: 0 0.5rem;
+  margin: auto;
 }
 
 .portfolio-image-box {
