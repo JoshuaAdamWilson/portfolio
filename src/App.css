@@ -338,7 +338,7 @@ nav ul li {
 
 .popup-paragraph {
   margin: auto;
-  width: 40rem !important;
+  max-width: 80%;
 }
 
 .portfolio-image {
@@ -602,7 +602,7 @@ textarea.form-control {
 
 .success-message {
   font-weight: 100;
-  color: var(--primary-green)
+  color: var(--primary-green);
 }
 
 /************************************MEDIA ************************/
@@ -649,7 +649,7 @@ textarea.form-control {
 .footer button {
   border: none;
   background: transparent;
-  color: var(--primary-dark-gray)
+  color: var(--primary-dark-gray);
 }
 
 .footer button:hover {
@@ -664,7 +664,7 @@ textarea.form-control {
   padding-bottom: 0;
 }
 
-@media(max-width: 1080px) {
+@media (max-width: 1080px) {
   #updown {
     display: flex !important;
     flex-direction: column !important;
@@ -677,9 +677,8 @@ textarea.form-control {
   }
 }
 
-@media(max-width: 991px) {
-  * 
-  #leftside p {
+@media (max-width: 991px) {
+  * #leftside p {
     text-align: center;
     margin-left: -22px;
   }
