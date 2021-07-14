@@ -14,7 +14,7 @@ const Footer = () => {
         <div id="updown" className="row">
           <div id="leftside" className="col-lg-4 col-md-6 col-sm-6">
             <div className="d-flex align-content-center">
-              <p>West Jordan, Utah</p>
+              <p>Snohomish, Washington</p>
             </div>
             <div className="d-flex">
               <p>JoshuaAdamWilson1@gmail.com</p>
