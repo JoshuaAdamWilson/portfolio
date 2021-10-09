@@ -15,6 +15,7 @@ const Footer = () => {
           <div id="leftside" className="col-lg-4 col-md-6 col-sm-6">
             <div className="d-flex align-content-center">
               <p>Snohomish, Washington</p>
+              <br />
             </div>
             <div className="d-flex">
               <p>JoshuaAdamWilson1@gmail.com</p>
@@ -46,6 +47,8 @@ const Footer = () => {
                 <button className="footer-nav">Home</button>
                 <br />
                 <button className="footer-nav">About Me</button>
+                <br />
+                <button className="footer-nav">Blog</button>
                 <br />
                 <button className="footer-nav">Services</button>
               </div>

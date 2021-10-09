@@ -7,10 +7,15 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
+    "@sanity/block-content-to-react": "^3.0.0",
+    "@sanity/cli": "^2.21.0",
+    "@sanity/client": "^2.21.0",
+    "@sanity/image-url": "^1.0.1",
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^4.6.0",
+    "concurrently": "^6.2.1",
     "email-js": "^2.0.2",
     "emailjs-com": "^2.6.4",
     "gh-pages": "^3.1.0",
@@ -20,6 +25,8 @@
     "react-particles-js": "^3.4.1",
     "react-popupbox": "^2.0.8",
     "react-responsive-carousel": "^3.2.18",
+    "react-router-dom": "^5.3.0",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.2",
     "react-share": "^4.4.0",
@@ -30,7 +37,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "concurrently \"npm start\" \"sanity start\""
   },
   "eslintConfig": {
     "extends": [

@@ -73,8 +73,8 @@ nav ul li {
     url("./images/header-image.jpeg") no-repeat;
   background-size: cover;
   background-position: center;
-  height: 80vh;
-  margin-top: 80px;
+  height: 80.5vh;
+  margin-top: 112px;
 }
 
 .header-wrapper > img {
