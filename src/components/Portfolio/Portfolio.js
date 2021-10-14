@@ -9,6 +9,7 @@ import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { PopupboxManager, PopupboxContainer } from "react-popupbox";
 import "react-popupbox/dist/react-popupbox.css";
 import { HashLink as Link } from 'react-router-hash-link';
+import "../../App.css"
 
 const Portfolio = () => {
 

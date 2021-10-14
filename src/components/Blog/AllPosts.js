@@ -1,6 +1,5 @@
 import sanityClient from '../../client.js';
 import React, { useEffect, useState } from 'react'
-import './Blog.css'
 import { Link } from 'react-router-dom';
 
 const AllPosts = () => {
