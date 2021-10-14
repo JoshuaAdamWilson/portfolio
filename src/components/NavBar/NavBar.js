@@ -61,7 +61,7 @@ const NavBar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link smooth={true} to="/#portfolio" scroll={el => scrollWithOffset(el)} className="nav-link">
+              <Link smooth={true} to="/portfolio/#portfolio" scroll={el => scrollWithOffset(el)} className="nav-link">
                 Projects
               </Link>
             </li>

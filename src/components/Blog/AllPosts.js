@@ -57,7 +57,7 @@ const AllPosts = () => {
                         className="block absolute top-0 left-0 text-gray-600 text-sm font-bold px-2 py-2 bg-teal-700
                           text-red-100 bg-opacity-75 rounded z-1000"
                       >
-                        {post.publishedAt.slice(0, 10)}
+                        {post.publishedAt.slice(5, 10) + "-" + post.publishedAt.slice(0, 4)}
                       </h3>
                       <h2
                         className="text-gray-800 text-lg font-bold px-3 py-4 bg-teal-700

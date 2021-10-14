@@ -4,7 +4,6 @@ import AboutMe from '../AboutMe/AboutMe'
 import Contacts from '../Contacts/Contacts'
 import Experience from '../Experience/Experience'
 import Header from '../Header/Header'
-import Portfolio from '../Portfolio/Portfolio'
 import Services from '../Services/Services'
 
 const Home = () => {
@@ -43,7 +42,6 @@ const Home = () => {
       <AboutMe />
       <Services />
       <Experience />
-      <Portfolio />
       {/* <Testimonials /> */}
       <Contacts />
       

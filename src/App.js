@@ -6,6 +6,7 @@ import AllPosts from "./components/Blog/AllPosts";
 import Home from "./components/Home.js/Home";
 import OnePost from "./components/Blog/OnePost"
 import Footer from "./components/Footer/Footer"
+import Portfolio from "./components/Portfolio/Portfolio";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               <AllPosts />
             )} />
             <Route component={OnePost} path="/blog/:slug" />
+            <Route component={Portfolio} path="/portfolio" />
           </Switch>
           <Footer />
       </BrowserRouter>

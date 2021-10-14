@@ -54,7 +54,7 @@ export default function OnePost() {
                   <img
                     src={urlFor(postData.authorImage).url()}
                     className="w-30 h-24 rounded-full"
-                    alt="Author is Kap"
+                    alt="Author is Joshua"
                   />
                   <h4 className="cursive flex items-center pl-2 text-2xl">
                     {postData.name}
@@ -71,7 +71,9 @@ export default function OnePost() {
           </div>
           
           <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full">
-            Published on: {postData.publishedAt.slice(0, 10)}
+            <p className="text-base font-bold text-base">
+              Published on: {postData.publishedAt.slice(5, 10) + "-" + postData.publishedAt.slice(0, 4)}
+            </p>
             <BlockContent
               blocks={postData.body}
               projectId={sanityClient.clientConfig.projectId}
