@@ -6,22 +6,27 @@ const AllPosts = () => {
   const [ allPostsData, setAllPosts ] = useState(null);
 
   useEffect(() => {
-    sanityClient
-      .fetch(
-        `*[_type == "post"]{
-          title,
-          slug,
-          publishedAt,
-          mainImage{
-              asset->{
-              _id,
-              url
+    const getData = () => {
+      sanityClient
+        .fetch(
+          `*[_type == "post"]{
+            title,
+            slug,
+            publishedAt,
+            mainImage{
+                asset->{
+                _id,
+                url
+              }
             }
-          }
-        }`
-      )
-      .then((data) => setAllPosts(data))
-      .catch(console.error)
+          }`
+        )
+        .then((data) => setAllPosts(data))
+        .catch(console.error)
+        console.log(allPostsData)
+    }
+    getData()
+    
   }, []);
 
   return (
@@ -34,7 +39,8 @@ const AllPosts = () => {
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {allPostsData &&
-              allPostsData.map((post, index) => (
+              allPostsData.sort((a, b) => a.publishedAt > b.publishedAt ? 1 : -1)
+              .map((post, index) => (
                 <Link to={"/blog/" + post.slug.current} key={post.slug.current}>
                   <span
                     className="block h-64 relative rounded shadow leading-snug bg-white
