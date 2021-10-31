@@ -27,7 +27,7 @@ const AllPosts = () => {
     }
     getData()
     
-  }, []);
+  }, [allPostsData]);
 
   return (
     <div className='blog'>
