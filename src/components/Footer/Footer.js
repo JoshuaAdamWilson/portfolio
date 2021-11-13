@@ -48,8 +48,8 @@ const Footer = () => {
                 <br />
                 <button className="footer-nav">About Me</button>
                 <br />
-                <button className="footer-nav">Blog</button>
-                <br />
+                {/* <button className="footer-nav">Blog</button>
+                <br /> */}
                 <button className="footer-nav">Services</button>
               </div>
               <div className="col">

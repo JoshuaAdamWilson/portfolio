@@ -153,6 +153,15 @@ nav ul li {
   }
 }
 
+/************************Brain******************************************/
+
+.canvas-container {
+  position: absolute;
+  height: 80% !important;
+  width: 100vh;
+  z-index: 1;
+}
+
 /************************* About Me ************************/
 
 .photo-wrap {

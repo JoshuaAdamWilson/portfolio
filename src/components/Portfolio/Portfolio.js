@@ -8,7 +8,7 @@ import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 // REact pop-up box
 import { PopupboxManager, PopupboxContainer } from "react-popupbox";
 import "react-popupbox/dist/react-popupbox.css";
-import { HashLink as Link } from 'react-router-hash-link';
+// import { HashLink as Link } from 'react-router-hash-link';
 import "../../App.css"
 
 const Portfolio = () => {
@@ -163,11 +163,11 @@ const Portfolio = () => {
     fadeInSpeed: 500,
   };
 ////////////////////////////////////////////////////
-  const scrollWithOffset = (el) => {
-    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -112; 
-    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
-  }
+  // const scrollWithOffset = (el) => {
+  //   const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+  //   const yOffset = -112; 
+  //   window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+  // }
 
   return (
     <div id="portfolio" className="portfolio-wrapper">
@@ -212,14 +212,14 @@ const Portfolio = () => {
           </div>
         </div>
 {/* /////////////////////////////////////////////////////////////////////////////////////////////// */}
-        <div className="column2">
+        {/* <div className="column2">
           <h1 className="text-uppercase text-center py-5 text-5xl">OTHER PROJECTS</h1>
           <div className="row image-box-wrapper row justify-content-center">
             <Link smooth={true} to="/blog/#blog" scroll={el => scrollWithOffset(el)} className="nav-link other-project-links cursive">
               My Blog
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
       <PopupboxContainer {...popupboxConfigInstagram} />
       <PopupboxContainer {...popupboxConfigFacebook} />

@@ -45,11 +45,11 @@ const NavBar = () => {
                   About Me
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link smooth={true} to="/blog/#blog" scroll={el => scrollWithOffset(el)} className="nav-link">
                 Blog
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link smooth={true} to="/#services" scroll={el => scrollWithOffset(el)} className="nav-link">
                 Services
