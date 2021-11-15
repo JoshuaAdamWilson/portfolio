@@ -25,7 +25,7 @@ function AboutMe() {
             I also have knowledge in Python/Django, Firebase and Sanity.IO.
             <br />
             <br />
-            When I'm not working on the next big thing or breaking the rack, I'm 
+            When I'm not working on the next big thing or breaking the rack in billiards, I'm 
             a fierce adrenaline junkie, always looking for something to get my 
             blood pumping including parachuting, shark-diving and many others. 
             I also enjoy playing video games, writing poetry and drawing.
