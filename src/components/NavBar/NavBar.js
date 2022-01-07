@@ -60,6 +60,7 @@ const NavBar = () => {
                 Experience
               </Link>
             </li>
+{/*
             <li className="nav-item">
               <Link smooth={true} to="/portfolio/#portfolio" scroll={el => scrollWithOffset(el)} className="nav-link">
                 Projects
@@ -70,6 +71,7 @@ const NavBar = () => {
                 Contact Me
               </Link>
             </li>
+*/}
           </ul>
         </div>
       </div>
