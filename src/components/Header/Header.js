@@ -1,7 +1,7 @@
 import React from 'react'
 import Typed from 'react-typed'
 // import { Link } from 'react-scroll'
-
+// 
 const Header = () => {
   return (
     <div id="home" className="header-wrapper">
